@@ -67,6 +67,7 @@ nav a:hover {
   gap: 20px;
   padding: 0 20px;
   margin: 0 auto;
+  width: 1000px;
 }
 
 .first, .second, .third, .fourth, .fifth, .sixth {
@@ -152,6 +153,7 @@ footer {
   .kartinki {
     gap: 15px;
     padding: 0 15px;
+    width: auto;
   }
   
   .first, .second, .third, .fourth, .fifth, .sixth {
@@ -210,6 +212,7 @@ footer {
   .kartinki {
     gap: 10px;
     padding: 0 10px;
+    width: auto;
   }
   
   .first, .second, .third, .fourth, .fifth, .sixth {
@@ -226,21 +229,5 @@ footer {
     height: 150px;
     font-size: small;
     padding: 15px;
-  }
-}
-
-/* Дополнительно для очень маленьких экранов */
-@media (max-width: 320px) {
-  .text h1 {
-    font-size: 1.3rem;
-  }
-  
-  nav a {
-    font-size: 0.8rem;
-    margin: 0 3px;
-  }
-  
-  span {
-    font-size: medium;
   }
 }
