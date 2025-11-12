@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+/* Общие стили */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-family: "BBH Sans Bogle", sans-serif;
+}
+
+.logo {
+  font-weight: bold;
+  color: gray;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+.text {
+  text-align: center;
+  font-family: "Stack Sans Notch", sans-serif;
+  word-spacing: 10px;
+  font-size: larger;
+  padding: 0 20px;
+}
+
+.text p {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  font-size: smaller;
+}
+
+.text p1 {
+  font-size: smaller;
+}
+
+.text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.kartinki {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first {
+  background-image: url("images/business.jpg");
+}
+
+.second {
+  background-color: orange;
+}
+
+.third {
+  background-image: url("images/modern-business-building-scenery-touching-sky.jpg");
+}
+
+.fourth {
+  background-color: green;
+}
+
+.fifth {
+  background-image: url("images/close-up-young-business-person-doing-internship.jpg");
+}
+
+.sixth {
+  background-color: aquamarine;
+}
+
+span {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-size: xx-large;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  height: 300px;
+  text-align: center;
+  color: white;
+  font-family: "Stack Sans Notch", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Планшет (768px и меньше) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .text {
+    word-spacing: 5px;
+  }
+  
+  .text p {
+    max-width: 90%;
+    font-size: small;
+  }
+  
+  .kartinki {
+    gap: 15px;
+    padding: 0 15px;
+  }
+  
+  .first, .second, .third, .fourth, .fifth, .sixth {
+    width: calc(50% - 15px);
+    height: 250px;
+  }
+  
+  span {
+    font-size: x-large;
+  }
+  
+  footer {
+    height: 200px;
+    font-size: medium;
+  }
+}
+
+/* Телефон (390px и меньше) */
+@media (max-width: 390px) {
+  header {
+    padding: 10px 15px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  nav a {
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+  
+  .text h1 {
+    font-size: 1.5rem;
+    word-spacing: 3px;
+  }
+  
+  .text p {
+    max-width: 100%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  
+  .text p1 {
+    font-size: 0.8rem;
+  }
+  
+  .kartinki {
+    gap: 10px;
+    padding: 0 10px;
+  }
+  
+  .first, .second, .third, .fourth, .fifth, .sixth {
+    width: 100%;
+    height: 200px;
+  }
+  
+  span {
+    font-size: large;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  }
+  
+  footer {
+    height: 150px;
+    font-size: small;
+    padding: 15px;
+  }
+}
+
+/* Дополнительно для очень маленьких экранов */
+@media (max-width: 320px) {
+  .text h1 {
+    font-size: 1.3rem;
+  }
+  
+  nav a {
+    font-size: 0.8rem;
+    margin: 0 3px;
+  }
+  
+  span {
+    font-size: medium;
+  }
+}
