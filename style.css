@@ -128,7 +128,6 @@ footer {
   padding: 20px;
 }
 
-/* Планшет (768px и меньше) */
 @media (max-width: 900px) {
   header {
     padding: 15px 30px;
@@ -171,7 +170,6 @@ footer {
   }
 }
 
-/* Телефон (390px и меньше) */
 @media (max-width: 500px) {
   header {
     padding: 10px 15px;
